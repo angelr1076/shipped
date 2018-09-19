@@ -7,20 +7,25 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
   </head>
 
   <body>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
 
       <div id="login-message">
         <% if user_signed_in? %>
-          <div>Signed in as: <h3><%= current_user.email %></h3></div>
+          <div>Signed in as: <h4><%= current_user.email %></h4></div>
         <% end %>
       </div>
 
     <!--views/devise/menu/_login_items.html.erb-->
     <ul class="hmenu">
+        <li>
+          <%= link_to "Home", root_path %>
+        </li>
       <% if user_signed_in? %>
         <li>
           <%= link_to('Logout', destroy_user_session_path, method: :delete) %>        
