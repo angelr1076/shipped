@@ -6,6 +6,14 @@ body {
     color: lightgrey;
 }
 
+textarea:focus, input:focus {
+    color: #00a2ff;
+}
+
+input, select, textarea{
+    color: rgb(218, 179, 179);
+}
+
 ul.hmenu {
     list-style: none;	
     margin: 0;
