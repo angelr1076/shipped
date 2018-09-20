@@ -38,7 +38,7 @@
 
   <div class="field">
     <%= form.label :ship_id %>
-    <%= form.number_field :ship_id %>
+    <%= form.select(:ship_id, options_for_select(@ship_options))%>
   </div>
 
   <div class="field">

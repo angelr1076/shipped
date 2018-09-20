@@ -1,6 +1,6 @@
 class ShipsController < ApplicationController
   before_action :set_ship, only: [:show, :edit, :update, :destroy]
-
+  before_action :all_planets, only: [:new, :edit, :update]
   # GET /ships
   # GET /ships.json
   def index
@@ -15,7 +15,6 @@ class ShipsController < ApplicationController
   # GET /ships/new
   def new
     @ship = current_user.ships.build
-    @planet_options = ["Tatooine"],["Naboo"],["Coruscant"],["Bespin"],["Kamino"],["Jakku"],["Corellia"],["Endor"],["Hoth"], ["Kashyyyk"]
   end
 
   # GET /ships/1/edit

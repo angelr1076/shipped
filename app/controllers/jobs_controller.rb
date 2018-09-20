@@ -14,6 +14,7 @@ class JobsController < ApplicationController
 
   # GET /jobs/new
   def new
+    @ship_options = Ship.all.map{ |s| [s.name, s.id]}
     @job = Job.new
     @planet_options = ["Tatooine"],["Naboo"],["Coruscant"],["Bespin"],["Kamino"],["Jakku"],["Corellia"],["Endor"],["Hoth"], ["Kashyyyk"]
   end
