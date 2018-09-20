@@ -14,11 +14,14 @@ class ShipsController < ApplicationController
 
   # GET /ships/new
   def new
+    all_planets
     @ship = current_user.ships.build
+
   end
 
   # GET /ships/1/edit
   def edit
+    all_planets
   end
 
   # POST /ships
