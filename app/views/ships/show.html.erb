@@ -17,12 +17,12 @@
 
 <p>
   <strong>User:</strong>
-  <%= @ship.user_id %>
+  <%= @ship.user.email %>
 </p>
 
 <p>
-  <strong>Job:</strong>
-  <%= @ship.job_id %>
+  <%#<strong>Job:</strong>
+  <%#<%= @ship.job_id %>
 </p>
 
 <%= link_to 'Edit', edit_ship_path(@ship) %> |

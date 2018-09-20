@@ -1,0 +1,35 @@
+body {
+    margin: 20px !important;
+    width: 900px;
+    background: url("https://vignette.wikia.nocookie.net/starwars/images/6/62/Merchant_One.png/revision/latest?cb=20150120071934");
+    background-size: cover;
+    color: lightgrey;
+}
+
+textarea:focus, input:focus {
+    color: #00a2ff;
+}
+
+input, select, textarea{
+    color: rgb(218, 179, 179);
+}
+
+ul.hmenu {
+    list-style: none;	
+    margin: 0;
+    padding: 10px;
+  }
+  
+  ul.hmenu li {
+    display: inline;
+  }
+
+  li {
+      padding: 10px;
+      list-style-type: none;
+  }
+
+  hr {
+      width: 600px;
+      float: left;
+  }
