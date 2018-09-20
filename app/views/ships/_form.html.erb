@@ -21,21 +21,12 @@
     <%= form.number_field :containers %>
   </div>
 
-  <div class="field">
+   <div>
     <%= form.label :location %>
-    <%= form.text_field :location %>
+     <%= form.select(:location, options_for_select(@planet_options)) %>
   </div>
 
-  <div class="field">
-    <%= form.label :user_id %>
-    <%= form.number_field :user_id %>
-  </div>
-
-  <div class="field">
-    <%= form.label :job_id %>
-    <%= form.number_field :job_id %>
-  </div>
-
+<br>
   <div class="actions">
     <%= form.submit %>
   </div>

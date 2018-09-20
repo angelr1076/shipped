@@ -15,6 +15,7 @@ class JobsController < ApplicationController
   # GET /jobs/new
   def new
     @job = Job.new
+    @planet_options = ["Tatooine"],["Naboo"],["Coruscant"],["Bespin"],["Kamino"],["Jakku"],["Corellia"],["Endor"],["Hoth"], ["Kashyyyk"]
   end
 
   # GET /jobs/1/edit

@@ -23,12 +23,12 @@
 
   <div class="field">
     <%= form.label :origin %>
-    <%= form.text_field :origin %>
+    <%= form.select(:origin, options_for_select(@planet_options))%>
   </div>
 
   <div class="field">
     <%= form.label :destination %>
-    <%= form.text_field :destination %>
+    <%= form.select(:destination, options_for_select(@planet_options))%>
   </div>
 
   <div class="field">
