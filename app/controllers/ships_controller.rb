@@ -1,5 +1,6 @@
 class ShipsController < ApplicationController
   before_action :set_ship, only: [:show, :edit, :update, :destroy]
+  # before_action :authenticate_user! [:edit, :destroy]
 
   # GET /ships
   # GET /ships.json
@@ -14,7 +15,7 @@ class ShipsController < ApplicationController
 
   # GET /ships/new
   def new
-    @ship = Ship.new
+    @ship = current_user.ships.build
   end
 
   # GET /ships/1/edit
@@ -24,8 +25,7 @@ class ShipsController < ApplicationController
   # POST /ships
   # POST /ships.json
   def create
-    @ship = Ship.new(ship_params)
-
+    @ship = current_user.ships.build(ship_params)
     respond_to do |format|
       if @ship.save
         format.html { redirect_to @ship, notice: 'Ship was successfully created.' }
@@ -69,6 +69,6 @@ class ShipsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def ship_params
-      params.require(:ship).permit(:name, :containers, :location, :user_id, :job_id)
+      params.require(:ship).permit(:name, :containers, :location, :user_id)
     end
 end
