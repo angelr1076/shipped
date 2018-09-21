@@ -25,8 +25,9 @@
     <%= form.label :location %>
      <%= form.select(:location, options_for_select(@planet_options)) %>
   </div>
-
-<br>
+  <div clas="field">
+  <%= form.file_field :image %>
+  </div>
   <div class="actions">
     <%= form.submit %>
   </div>

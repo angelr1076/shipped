@@ -1,6 +1,6 @@
 class JobsController < ApplicationController
   before_action :set_job, only: [:show, :edit, :update, :destroy]
-  before_action :all_ships, only: [:new, :create, :update]
+  before_action :all_ships, only: [:new, :edit, :create, :update]
 
   # GET /jobs
   # GET /jobs.json
