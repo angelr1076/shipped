@@ -23,12 +23,12 @@
 
   <div class="field">
     <%= form.label :origin %>
-    <%= form.text_field :origin %>
+    <%= form.select(:origin, options_for_select(@planet_options))%>
   </div>
 
   <div class="field">
     <%= form.label :destination %>
-    <%= form.text_field :destination %>
+    <%= form.select(:destination, options_for_select(@planet_options))%>
   </div>
 
   <div class="field">
@@ -38,7 +38,8 @@
 
   <div class="field">
     <%= form.label :ship_id %>
-    <%= form.number_field :ship_id %>
+    <!-- <%= form.collection_select(:ship_id, Ship.all, :id, :name,{:multiple=>true}, size: Ship.all.length)%> -->
+    <%= form.select(:ship_id, options_for_select(@ship_options))%>
   </div>
 
   <div class="field">
@@ -47,6 +48,7 @@
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Submit", :class => "waves-effect black btn" %>
+
   </div>
 <% end %>

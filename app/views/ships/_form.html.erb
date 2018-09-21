@@ -17,16 +17,21 @@
   </div>
 
   <div class="field">
-    <%= form.label :containers %>
-    <%= form.number_field :containers %>
+    <!-- a lock_version needs to be set to lock the value entered by the user, unless they edit the ship. -->
+    <!-- also set a container limit -->
+    <%= form.label :container_limit %>
+    <%= form.number_field :containers, min: 5, max: 100 %>
   </div>
 
-  <div class="field">
+   <div>
     <%= form.label :location %>
-    <%= form.text_field :location [[]] %>
+     <%= form.select(:location, options_for_select(@planet_options)) %>
   </div>
-
+  <div clas="field">
+  <%= form.file_field :image %>
+  </div>
   <div class="actions">
-    <%= form.submit %>
+  </br>
+    <%= form.submit "Submit", :class => "waves-effect black btn" %>
   </div>
 <% end %>

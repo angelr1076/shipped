@@ -1,35 +1,92 @@
 body {
-    margin: 20px !important;
-    width: 900px;
-    background: url("https://vignette.wikia.nocookie.net/starwars/images/6/62/Merchant_One.png/revision/latest?cb=20150120071934");
-    background-size: cover;
-    color: lightgrey;
+    margin: 0;
+    color: rgb(236, 228, 236);
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 2px 2px 3px black;
+}
+
+nav {
+    background-color: black !important;
 }
 
 textarea:focus, input:focus {
     color: #00a2ff;
 }
 
-input, select, textarea{
-    color: rgb(218, 179, 179);
+input {
+    background: 2px solid black !important;
 }
 
-ul.hmenu {
-    list-style: none;	
-    margin: 0;
-    padding: 10px;
+input, select, textarea{
+    color: rgb(26, 24, 24)!important;
+    text-shadow: 2px 2px 3px grey;
+}
+
+hr {
+    width: 600px;
+    float: left;
+}
+
+select {
+    display: block !important;
+    width: 200px !important;
+}
+
+li {
+    list-style-type: none;
+}
+.splash-spaceport {
+    background-image: image-url("space-port.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
   }
   
-  ul.hmenu li {
-    display: inline;
+  .splash-jobs{
+    background-image: image-url("load-jobs.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .splash-ships {
+    background-image: image-url("new-ships.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .splash-jobs-index {
+    background-image: image-url("ships_dock.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .splash-user {
+    background-image: image-url("corellia_user.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
   }
 
-  li {
-      padding: 10px;
-      list-style-type: none;
+  .assign-new {
+    background-image: image-url("assign_new.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
   }
 
-  hr {
-      width: 600px;
-      float: left;
+  .assign-index {
+    background-image: image-url("assign_index.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .card {
+      height: 400px;
+  }
+  img {
+      width: 300px;
+      height: 200px;
+  }
+  .button_to {
+    margin-left: 12px;
   }

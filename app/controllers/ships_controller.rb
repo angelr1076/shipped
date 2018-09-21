@@ -1,7 +1,5 @@
 class ShipsController < ApplicationController
   before_action :set_ship, only: [:show, :edit, :update, :destroy]
-  # before_action :authenticate_user! [:edit, :destroy]
-
   # GET /ships
   # GET /ships.json
   def index
@@ -16,15 +14,18 @@ class ShipsController < ApplicationController
   # GET /ships/new
   def new
     @ship = current_user.ships.build
+    all_planets
   end
 
   # GET /ships/1/edit
   def edit
+    all_planets
   end
 
   # POST /ships
   # POST /ships.json
   def create
+    all_planets
     @ship = current_user.ships.build(ship_params)
     respond_to do |format|
       if @ship.save
@@ -62,13 +63,11 @@ class ShipsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_ship
       @ship = Ship.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
     def ship_params
-      params.require(:ship).permit(:name, :containers, :location, :user_id)
+      params.require(:ship).permit(:name, :containers, :location, :user_id, :image)
     end
 end

@@ -1,5 +1,6 @@
 class JobsController < ApplicationController
   before_action :set_job, only: [:show, :edit, :update, :destroy]
+  before_action :all_ships, only: [:new, :edit, :create, :update]
 
   # GET /jobs
   # GET /jobs.json
@@ -14,17 +15,20 @@ class JobsController < ApplicationController
 
   # GET /jobs/new
   def new
+    all_planets
     @job = Job.new
   end
 
   # GET /jobs/1/edit
   def edit
+    all_planets
   end
 
   # POST /jobs
   # POST /jobs.json
   def create
-    @job = Job.new(job_params)
+    all_planets
+    @job = current_user.jobs.build(job_params)
 
     respond_to do |format|
       if @job.save
@@ -66,9 +70,11 @@ class JobsController < ApplicationController
     def set_job
       @job = Job.find(params[:id])
     end
-
     # Never trust parameters from the scary internet, only allow the white list through.
     def job_params
       params.require(:job).permit(:name, :description, :origin, :destination, :cost, :ship_id, :user_id)
+    end
+    def all_ships
+      @ship_options = Ship.all.map{ |s| [s.name, s.id]}
     end
 end

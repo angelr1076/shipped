@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Assignments</h1>
-
+<%= button_to 'New Assignment', new_assignment_path, :method => :get, class: "waves-effect black btn large"  %>
 <table>
   <thead>
     <tr>
@@ -14,8 +14,8 @@
   <tbody>
     <% @assignments.each do |assignment| %>
       <tr>
-        <td><%= assignment.ship_id %></td>
-        <td><%= assignment.job_id %></td>
+        <td><%= assignment.ship.name%></td>
+        <td><%= assignment.job.name %></td>
         <td><%= link_to 'Show', assignment %></td>
         <td><%= link_to 'Edit', edit_assignment_path(assignment) %></td>
         <td><%= link_to 'Destroy', assignment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -25,5 +25,4 @@
 </table>
 
 <br>
-
-<%= link_to 'New Assignment', new_assignment_path %>
+<%= button_to 'Back', ships_path, :method => :get, class: "waves-effect black btn" %>
