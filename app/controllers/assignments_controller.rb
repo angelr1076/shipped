@@ -1,7 +1,7 @@
 class AssignmentsController < ApplicationController
   before_action :set_assignment, only: [:show, :edit, :update, :destroy]
-  before_action :all_ships, only: [:new, :edit, :create, :update]
-  before_action :all_jobs, only: [:new, :edit, :create, :update]
+  before_action :all_ships, only: [:new, :create, :edit, :update]
+  before_action :all_jobs, only: [:new, :create, :edit, :update]
 
   # GET /assignments
   # GET /assignments.json
