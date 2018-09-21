@@ -7,55 +7,37 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
   </head>
 
   <body>
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
-
-    <!--views/devise/menu/_login_items.html.erb-->
-    <ul class="hmenu">
-        <li>
-          <%= link_to "Home", root_path %>
-        </li>
-      <% if user_signed_in? %>
-        <li>
-          <%= link_to('Logout', destroy_user_session_path, method: :delete) %>        
-        </li>
-      <% else %>
-        <li>
-          <%= link_to('Login', new_user_session_path)  %>  
-        </li>
-      <% end %>
+      <!--views/devise/menu/_login_items.html.erb-->
+    <nav>
+      <div class="nav-wrapper">
+      <a href="#"class="brand-logo">Logo</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><%= link_to "Home", root_path %></li>
 
       <!--views/devise/menu/_registration_items.html.erb-->
       <% if user_signed_in? %>
-         <li>
-          <%= link_to "Edit User", edit_user_registration_path %>
-        </li>
+         <li> <%= link_to "Edit User", edit_user_registration_path %></li>
       <% else %>
-        <li>
-          <%= link_to('Register', new_user_registration_path)  %>
-        </li>
+        <li><%= link_to('Register', new_user_registration_path)  %></li>
       <% end %>
 
       <!--<%= link_to "Sign In", user_session_path %>
       <%= link_to "Sign Up", new_user_session_path%>-->
       
-        <li>
-          <%= link_to "Ships", ships_path %>
-        </li>
-
-        <li>
-          <%= link_to "Jobs", jobs_path %>
-        </li>
-
-        <li>
-          <%= link_to "Assignments", assignments_path %>
-        </li>
+        <li> <%= link_to "Ships", ships_path %></li>
+        <li><%= link_to "Jobs", jobs_path %></li>
+        <li><%= link_to "Assignments", assignments_path %></li>
+      <% if user_signed_in? %>
+        <li><%= link_to('Logout', destroy_user_session_path, method: :delete) %></li>
+      <% else %>
+        <li> <%= link_to('Login', new_user_session_path)  %> </li>
+      <% end %>
       </ul>
+    </div>
+  </nav>
       <hr>
       </br>
 
@@ -63,6 +45,8 @@
         <% if user_signed_in?  %>
           <div><h5>Signed in as: <%= current_user.email %></h5></div>
         <% end %>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
       </div>
     <%= yield %>
   </body>

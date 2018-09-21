@@ -38,6 +38,7 @@
 
   <div class="field">
     <%= form.label :ship_id %>
+    <!-- <%= form.collection_select(:ship_id, Ship.all, :id, :name,{:multiple=>true}, size: Ship.all.length)%> -->
     <%= form.select(:ship_id, options_for_select(@ship_options))%>
   </div>
 

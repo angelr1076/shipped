@@ -16,7 +16,6 @@ class JobsController < ApplicationController
   # GET /jobs/new
   def new
     all_planets
-    @ship_options = Ship.all.map{ |s| [s.name, s.id]}
     @job = Job.new
   end
 
