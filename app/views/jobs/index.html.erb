@@ -2,7 +2,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Jobs</h1>
-
+<%= button_to 'New Job', new_job_path, :method => :get, class: "waves-effect black btn-large" %>
 <table>
   <thead>
     <tr>
@@ -34,7 +34,3 @@
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Job', new_job_path %>

@@ -2,5 +2,7 @@
 <h1>New Assignment</h1>
 
 <%= render 'form', assignment: @assignment %>
+<br>
+<%= button_to 'Back', assignments_path, :method => :get, class: "waves-effect black btn" %>
 
-<%= link_to 'Back', assignments_path %>
+

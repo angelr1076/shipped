@@ -3,4 +3,4 @@
 <%= render 'form', job: @job %>
 
 <%= link_to 'Show', @job %> |
-<%= link_to 'Back', jobs_path %>
+<%= button_to 'Back', jobs_path, :method => :get, class: "waves-effect black btn" %>
