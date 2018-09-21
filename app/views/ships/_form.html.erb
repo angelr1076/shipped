@@ -17,8 +17,10 @@
   </div>
 
   <div class="field">
-    <%= form.label :containers %>
-    <%= form.number_field :containers %>
+    <!-- a lock_version needs to be set to lock the value entered by the user, unless they edit the ship. -->
+    <!-- also set a container limit -->
+    <%= form.label :container_limit %>
+    <%= form.number_field :containers, min: 5, max: 100 %>
   </div>
 
    <div>

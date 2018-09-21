@@ -74,7 +74,7 @@ class JobsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def job_params
-      params.require(:job).permit(:name, :description, :origin, :destination, :cost, :ship_id, :user_id)
+      params.require(:job).permit(:name, :description, :origin, :destination, :cost, :user_id)
     end
     def all_ships
       @ship_options = Ship.all.map{ |s| [s.name, s.id]}

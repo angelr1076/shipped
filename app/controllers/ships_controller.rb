@@ -1,6 +1,7 @@
 class ShipsController < ApplicationController
   before_action :set_ship, only: [:show, :edit, :update, :destroy]
   before_action :all_planets, only: [:new, :edit, :update]
+  
   # GET /ships
   # GET /ships.json
   def index
@@ -14,14 +15,12 @@ class ShipsController < ApplicationController
 
   # GET /ships/new
   def new
-    all_planets
     @ship = current_user.ships.build
 
   end
 
   # GET /ships/1/edit
   def edit
-    all_planets
   end
 
   # POST /ships
