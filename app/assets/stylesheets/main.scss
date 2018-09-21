@@ -36,3 +36,22 @@ ul.hmenu {
 select {
     display: block !important;
 }
+.splash-spaceport {
+    background-image: image-url("space-port.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .splash-jobs{
+    background-image: image-url("load-jobs.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .splash-ships {
+    background-image: image-url("new-ships.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
