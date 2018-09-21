@@ -2,12 +2,12 @@
 
 <p>
   <strong>Ship:</strong>
-  <%= @assignment.ship_name %>
+  <%= @assignment.ship.name %>
 </p>
 
 <p>
   <strong>Job:</strong>
-  <%= @assignment.job_name %>
+  <%= @assignment.job.name %>
 </p>
 
 <%= link_to 'Edit', edit_assignment_path(@assignment) %> |
