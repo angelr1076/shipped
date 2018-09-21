@@ -16,7 +16,7 @@ class JobsController < ApplicationController
   # GET /jobs/new
   def new
     all_planets
-    @job = current_user.jobs.build
+    @job = Job.new
   end
 
   # GET /jobs/1/edit

@@ -1,6 +1,5 @@
 class ShipsController < ApplicationController
   before_action :set_ship, only: [:show, :edit, :update, :destroy]
-  
   # GET /ships
   # GET /ships.json
   def index
@@ -26,6 +25,7 @@ class ShipsController < ApplicationController
   # POST /ships
   # POST /ships.json
   def create
+    all_planets
     @ship = current_user.ships.build(ship_params)
     respond_to do |format|
       if @ship.save
