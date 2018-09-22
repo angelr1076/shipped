@@ -3,7 +3,9 @@
 
 <h1>Ships</h1>
 
+<% if user_signed_in? %>
 <%= button_to 'New Ship', new_ship_path, :method => :get, class: "waves-effect black btn-large" %>
+<% end %>
 
     <% @ships.each do |ship| %>
     <div class="row">
@@ -16,11 +18,14 @@
            <div class="card-content">
              <p>Cargo Containers: <%= ship.containers %></p>
              <p>Location: <%= ship.location %></p>
+             <p>Captain: <%= ship.user.email %> </p>
            </div>
            <div class="card-action">
              <%= link_to 'Show', ship %>
-             <%= link_to 'Edit', edit_ship_path(ship) %>
-             <%= link_to 'Destroy', ship, method: :delete, data: { confirm: 'Are you sure?' } %>
+             <% if current_user && current_user.id == ship.user_id %>
+             <%= link_to 'Edit', edit_ship_path(ship)%>
+             <%= link_to 'Destroy', ship, method: :delete, data: { confirm: 'Are you sure?' }%>
+             <% end %>
            </div>
           </div>
          </div>

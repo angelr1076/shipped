@@ -17,9 +17,18 @@ input {
     background: 2px solid black !important;
 }
 
-input, select, textarea{
-    color: rgb(26, 24, 24)!important;
+input, select, textarea {
     text-shadow: 2px 2px 3px grey;
+    width: 400px !important;
+}
+
+input[name=commit] {
+    height: 50px;
+    width: 80px;
+    border-radius: 5px;
+    background: black;
+    border: none;
+    margin-left: 5px;
 }
 
 hr {
@@ -35,6 +44,11 @@ select {
 li {
     list-style-type: none;
 }
+
+.droidmail {
+    color: rgb(13, 13, 241);
+}
+
 .splash-spaceport {
     background-image: image-url("space-port.png");
     background-size: cover;
@@ -81,8 +95,14 @@ li {
     background-attachment: fixed;
   }
   .card {
-      height: 400px;
+      color: rgb(238, 84, 37);
   }
+
+  .card-content {
+      font-size: 12px !important;
+      margin: 10px !important;
+  }
+
   img {
       width: 300px;
       height: 200px;

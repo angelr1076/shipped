@@ -36,17 +36,6 @@
     <%= form.number_field :cost %>
   </div>
 
-  <div class="field">
-    <%= form.label :ship_id %>
-    <!-- <%= form.collection_select(:ship_id, Ship.all, :id, :name,{:multiple=>true}, size: Ship.all.length)%> -->
-    <%= form.select(:ship_id, options_for_select(@ship_options))%>
-  </div>
-
-  <div class="field">
-    <%= form.label :user_id %>
-    <%= form.number_field :user_id %>
-  </div>
-
   <div class="actions">
     <%= form.submit "Submit", :class => "waves-effect black btn" %>
 

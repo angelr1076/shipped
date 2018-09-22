@@ -2,13 +2,22 @@
 
 <p>
   <strong>Ship:</strong>
-  <%= @assignment.ship_name %>
+  <%= @assignment.ship.name %>
 </p>
 
 <p>
   <strong>Job:</strong>
-  <%= @assignment.job_name %>
+  <%= @assignment.job.name %>
 </p>
 
+<p>
+  <strong>Created by Captain:</strong>
+  <%= @assignment.ship.user.email %>
+</p>
+
+
+<% if current_user && current_user.id == @assignment.ship.user_id %>
 <%= link_to 'Edit', edit_assignment_path(@assignment) %> |
+<% end %>
 <%= link_to 'Back', assignments_path %>
+
