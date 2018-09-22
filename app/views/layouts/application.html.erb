@@ -14,13 +14,13 @@
       <!--views/devise/menu/_login_items.html.erb-->
     <nav>
       <div class="nav-wrapper">
-      <a href="#"class="brand-logo">STAR SHIPPED</a>
+      <a href="#"class="brand-logo">STAR-SHIPPED</a>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><%= link_to "Home", root_path %></li>
 
       <!--views/devise/menu/_registration_items.html.erb-->
       <% if user_signed_in? %>
-         <li> <%= link_to "Edit User", edit_user_registration_path %></li>
+         <li> <%= link_to "Edit Cap'n", edit_user_registration_path %></li>
       <% else %>
         <li><%= link_to('Register', new_user_registration_path)  %></li>
       <% end %>
