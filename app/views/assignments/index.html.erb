@@ -20,9 +20,9 @@
   <tbody>
     <% @assignments.each do |assignment| %>
       <tr>
-        <td><%= assignment.ship.name%></td>
-        <td><%= assignment.job.name %></td>
-        <td><%= assignment.ship.user.email %></td>
+        <td><%= assignment.ship.name %></td> 
+        <td><%= assignment.job.name %></td> 
+        <td><%= assignment.ship.user.email %></td> 
         <td><%= link_to 'Show', assignment %></td>
         <% if current_user && current_user.id == assignment.ship.user_id %>
         <td><%= link_to 'Edit', edit_assignment_path(assignment) %></td>
