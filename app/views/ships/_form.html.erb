@@ -23,13 +23,14 @@
     <%= form.number_field :containers, min: 5, max: 100 %>
   </div>
 
-   <div>
-    <%= form.label :location %>
+  <div>
+     <%= form.label :location %>
      <%= form.select(:location, options_for_select(@planet_options)) %>
   </div>
   <div clas="field">
-  <%= form.file_field :image %>
+     <%= form.file_field :image %>
   </div>
+
   <div class="actions">
   </br>
     <%= form.submit "Submit", :class => "waves-effect black btn" %>
