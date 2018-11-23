@@ -1,9 +1,6 @@
 Shipped - Group Project: Mario Boras & Angel Rodriguez
-Goal:
-
-To become familiar with building a full featured Rails Application using validations, paperclip and Rails UJS.
-
-Assignment:
+Username: guest@gmail.com, 
+Password: guestpass
 
 Part A: Validations
 
