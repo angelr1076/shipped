@@ -3,6 +3,8 @@ Shipped - Group Project: Mario Boras & Angel Rodriguez
 Username: guest@gmail.com, 
 Password: guestpass
 
+![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1540985057/star-shipped.png)
+
 Part A: Validations
 
 Create a Rails application for shippers to help them organize all of the ships in their fleet, with a user login system using Devise. The application should be able to, at its most basic, allow users to:
