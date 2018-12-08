@@ -7,19 +7,22 @@ Password: guestpass
 
 Part A: Validations
 
-Create a Rails application for shippers to help them organize all of the ships in their fleet, with a user login system using Devise. The application should be able to, at its most basic, allow users to:
-
+This Rails application is built for shippers to help them organize all of the ships in their fleet, with a user login system using Devise. We built this to further our MVC trinity knowledge and better understand ActiveRecord associations. The application allows users to:
 
 Sign up, login and logout
 
-Create new boats that will associate with the user’s profile. Boats must have the following attributes
+Create new ships that will associate with the user’s profile. Ships have the following attributes:
+
 Name
 Amount of containers its able to ship
 Location (stored as a string)
 
 ![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1544242169/Screen_Shot_2018-12-07_at_10.59.28_PM.png)
 
-Create new jobs. Each job must have the following attributes
+![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1544242170/Screen_Shot_2018-12-07_at_10.58.54_PM.png)
+
+Create new jobs. Each job has the following attributes:
+
 Description
 Origin (stored as a string)
 Destination (stored as a string)
@@ -28,40 +31,33 @@ Amount of containers needed for job
 
 ![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1544242169/Screen_Shot_2018-12-07_at_11.07.09_PM.png)
 
-Assign boats to jobs
-Each boat can be assigned to multiple jobs
-Each job can have multiple boats assigned to it
-Hint: Think Many-to-many relationship
-Once you have the basics setup, add some validations:
+Assign ships to jobs:
+
+Each ship can be assigned to multiple jobs
+Each job can have multiple ships assigned to it
 
 ![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1544242145/ships_dock.jpg)
 ![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1544242145/new-ships.jpg)
 ![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1544242145/outrider.jpg)
 
+Some validations:
+
 Ships:
-Must have a unique name
-Locations must be pulled from a valid list of locations (use a hard-coded list)
-
-
-![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1544242170/Screen_Shot_2018-12-07_at_10.58.54_PM.png)
+Have a unique name
+Locations pulled from a valid list of locations (hard-coded)
 
 Jobs:
 
-Must have a unique name
-Cost must be above $1000 for each job
-Description must be at least 50 characters
-Origin and destinations must be pulled from a valid list of locations (use a hard-coded list)
-Part B: Rails UJS and Paperclip
+Have a unique name
+Origin and destinations are pulled from a valid list of locations (hard-coded)
 
-Features:
-Using the paperclip gem, gives the user the ability to upload a photo of a ship when the ship is being created
+Uses Rails UJS and Paperclip
 
 Requirements:
 User should be able to sign up, login and logout
-User should be able to add new boats to their profile
-User should be able to assign jobs to boats
-Boats and jobs should have properties that are noted above
+User should be able to add new ships to their profile
+User should be able to assign jobs to ships
+Ships and jobs should have properties that are noted above
 Validations coded - Only users have access to editing and deleting their data. Users that browse and are not logged in to the website can only view jobs, ships and assignments but have no access manipulating user data or constructs.
-Boat should allow for an image using the paperclip gem
-User should be able to add boats to a job using Rails UJS
-Code is well commented and contains a README
+Ship allows for an image using the paperclip gem
+User can add ships to a job using Rails UJS
