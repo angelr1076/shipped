@@ -9,12 +9,16 @@ Part A: Validations
 
 Create a Rails application for shippers to help them organize all of the ships in their fleet, with a user login system using Devise. The application should be able to, at its most basic, allow users to:
 
+![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1544242170/Screen_Shot_2018-12-07_at_10.58.54_PM.png)
+
 Sign up, login and logout
 
 Create new boats that will associate with the user’s profile. Boats must have the following attributes
 Name
 Amount of containers its able to ship
 Location (stored as a string)
+
+![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1544242169/Screen_Shot_2018-12-07_at_10.59.28_PM.png)
 
 Create new jobs. Each job must have the following attributes
 Description
@@ -23,13 +27,18 @@ Destination (stored as a string)
 Cost
 Amount of containers needed for job
 
+![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1544242169/Screen_Shot_2018-12-07_at_11.07.09_PM.png)
+
 Assign boats to jobs
 Each boat can be assigned to multiple jobs
 Each job can have multiple boats assigned to it
 Hint: Think Many-to-many relationship
 Once you have the basics setup, add some validations:
 
-Boats:
+![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1544242145/ships_dock.jpg)
+![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1544242145/new-ships.jpg)
+![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1544242145/outrider.jpg)
+Ships:
 Must have a unique name
 Locations must be pulled from a valid list of locations (use a hard-coded list)
 
