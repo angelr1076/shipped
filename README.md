@@ -9,7 +9,6 @@ Part A: Validations
 
 Create a Rails application for shippers to help them organize all of the ships in their fleet, with a user login system using Devise. The application should be able to, at its most basic, allow users to:
 
-![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1544242170/Screen_Shot_2018-12-07_at_10.58.54_PM.png)
 
 Sign up, login and logout
 
@@ -42,6 +41,9 @@ Once you have the basics setup, add some validations:
 Ships:
 Must have a unique name
 Locations must be pulled from a valid list of locations (use a hard-coded list)
+
+
+![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1544242170/Screen_Shot_2018-12-07_at_10.58.54_PM.png)
 
 Jobs:
 
