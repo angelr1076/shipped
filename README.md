@@ -38,6 +38,7 @@ Once you have the basics setup, add some validations:
 ![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1544242145/ships_dock.jpg)
 ![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1544242145/new-ships.jpg)
 ![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1544242145/outrider.jpg)
+
 Ships:
 Must have a unique name
 Locations must be pulled from a valid list of locations (use a hard-coded list)
