@@ -29,7 +29,7 @@ Destination (stored as a string)
 Cost
 Amount of containers needed for job
 
-# The app is mobile responsive, as you can see.
+# The app is mobile responsive.
 
 ![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1544242169/Screen_Shot_2018-12-07_at_11.07.09_PM.png)
 
