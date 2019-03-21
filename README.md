@@ -1,7 +1,7 @@
 # Shipped - programmed by Mario Boras & Angel Rodriguez
 
-Username: guest@gmail.com, 
-Password: guestpass
+## Username: guest@gmail.com, 
+## Password: guestpass
 
 ![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1540985057/star-shipped.png)
 
