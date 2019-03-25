@@ -69,7 +69,6 @@ class AssignmentsController < ApplicationController
       @assignment = Assignment.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
     def assignment_params
       params.require(:assignment).permit(:ship_id, :job_id)
     end
