@@ -1,16 +1,17 @@
-# Shipped - programmed by Mario Boras & Angel Rodriguez
+# Shipped
+## Designed and built by Mario Boras & Angel Rodriguez
 
-## Username: guest@gmail.com, 
-## Password: guestpass
+### Username: guest@gmail.com, 
+### Password: guestpass
 
-## Running the project locally: 
+### Running the project locally: 
 Clone or download the file. Make sure you're using the correct version of Ruby (2.5.1). Install RVM to manage the version or Ruby you're using. [RVM link](https://rvm.io/). First, run 'bundle install' to install all necessary gems. Run 'rails db:migrate' to migrate tables into your database. Once you migrate tables, run 'rails s' or 'rails server' and this will point you to localhost://3000 in the browser. You can now click the link or type that into your browser and view/play with the project.
 
 _You can run the rails console by typing 'rails console' in case you need to add or remove from tables manually._ 
 
 ![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1540985057/star-shipped.png)
 
-## Validations
+### Validations
 
 Application is built for shippers to help them organize all of the ships in their fleet, with a user login system using Devise. We built this to further our MVC trinity knowledge and better understand ActiveRecord associations. The application allows users to:
 
