@@ -17,9 +17,9 @@ Name
 Amount of containers its able to ship
 Location (stored as a string)
 
-![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1544242169/Screen_Shot_2018-12-07_at_10.59.28_PM.png)
-
 ![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1544242170/Screen_Shot_2018-12-07_at_10.58.54_PM.png)
+
+![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1544242169/Screen_Shot_2018-12-07_at_10.59.28_PM.png)
 
 Create new jobs. Each job has the following attributes:
 
