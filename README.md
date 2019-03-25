@@ -5,9 +5,9 @@
 
 ![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1540985057/star-shipped.png)
 
-# Validations
+## Validations
 
-This Rails application is built for shippers to help them organize all of the ships in their fleet, with a user login system using Devise. We built this to further our MVC trinity knowledge and better understand ActiveRecord associations. The application allows users to:
+Application is built for shippers to help them organize all of the ships in their fleet, with a user login system using Devise. We built this to further our MVC trinity knowledge and better understand ActiveRecord associations. The application allows users to:
 
 Sign up, login and logout
 
@@ -29,7 +29,7 @@ Destination (stored as a string)
 Cost
 Amount of containers needed for job
 
-# The app is mobile responsive.
+### Mobile responsive.
 
 ![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1544242169/Screen_Shot_2018-12-07_at_11.07.09_PM.png)
 
@@ -42,7 +42,7 @@ Each job can have multiple ships assigned to it
 ![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1544242145/new-ships.jpg)
 ![Settings Window](https://res.cloudinary.com/angelrodriguez/image/upload/v1544242145/outrider.jpg)
 
-# Some validations:
+### Other validations:
 
 Ships:
 Have a unique name
@@ -55,7 +55,7 @@ Origin and destinations are pulled from a valid list of locations (hard-coded)
 
 Uses Rails UJS and Paperclip
 
-# Requirements:
+### Requirements:
 User should be able to sign up, login and logout
 User should be able to add new ships to their profile
 User should be able to assign jobs to ships
