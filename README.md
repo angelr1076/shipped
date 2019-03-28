@@ -1,5 +1,5 @@
 # Shipped
-## Designed and built by Mario Boras & Angel Rodriguez
+## Designed and built by Mario Borras & Angel Rodriguez
 
 ### Username: guest@gmail.com, 
 ### Password: guestpass
